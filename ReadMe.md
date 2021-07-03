@@ -15,20 +15,20 @@ paper, we specifically build a novel deep architecture, called rain convolutiona
 intrinsic priors of rain streaks and has clear interpretability. In specific, we first establish a RCD model for representing rain streaks and utilize the proximal gradient descent technique to design an iterative algorithm only containing simple operators for solving the model. By unfolding it, we then build the RCDNet in which every network module has clear physical meanings and corresponds to each operation involved in the algorithm. This good interpretability greatly facilitates an easy visualization and analysis on what happens inside the network and why it works well in inference process. Moreover, taking into account the domain gap issue in real scenarios, we further design a novel dynamic RCDNet, where the rain kernels can be dynamically inferred corresponding to input rainy images so as to ensure a fine generalization performance in the inconsistent scenarios of rain types between training and testing data. By end-toend training such an interpretable network, all involved rain kernels and proximal operators can be automatically extracted, faithfully characterizing the features of both rain and clean background layers, and thus naturally lead to better deraining performance. Comprehensive experiments implemented on a series of representative synthetic and real datasets substantiate the superiority of our method, especially on its well generality to diverse testing scenarios and good interpretability for all its modules, as compared with state-of-the-art single image derainers both visually and quantitatively.
 
 ## Motivation
-<img src="./figs/motivation.png" height="50%" width="100%" alt=""/>
+<img src="motivation.png" height="50%" width="100%" alt=""/>
 
 ## Dynamic Rain Kernel Inference
-<img src="./figs/dynamic rain kernel.png" height="50%" width="100%" alt=""/>
+<img src="dynamic rain kernel.png" height="50%" width="100%" alt=""/>
 
 ## Rain Removal Performance 
 
 ### Training-Testing Match Case:
-<img src="./figs/match.png" height="50%" width="100%" alt=""/>
+<img src="match.png" height="50%" width="100%" alt=""/>
 
 ### Training-Testing Mismatch Case:
-<img src="./figs/generalization_dense.png" height="50%" width="100%" alt=""/>
+<img src="generalization_dense.png" height="50%" width="100%" alt=""/>
 
-<img src="./figs/generalization.png" height="50%" width="100%" alt=""/>
+<img src="generalization.png" height="50%" width="100%" alt=""/>
 
 ## Friendly Tips
 1. You can directly use the code framework of [RCDNet](https://github.com/hongwang01/RCDNet) to execute the training and testing process.
