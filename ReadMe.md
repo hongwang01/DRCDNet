@@ -1,6 +1,6 @@
 # RCDNet: An Interpretable Rain Convolutional Dictionary Network for Single Image Deraining
  
-[Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, Yong Liang, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng) [Arxiv](https://arxiv.org/abs/2107.06808) 
+[Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, Yong Liang, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng) [[Arxiv]](https://arxiv.org/abs/2107.06808) 
 
 We extend the previous work [RCDNet](https://github.com/hongwang01/RCDNet) to the training-testing mismatch case. In this work, we propose a dynamic rain kernel prediction mechanism, which makes the DRCDNet have the potential to obtain better generalization performance.
 
