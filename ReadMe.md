@@ -33,7 +33,7 @@ intrinsic priors of rain streaks and has clear interpretability. In specific, we
 <img src="generalization.png" height="50%" width="100%" alt=""/>
 
 ## Friendly Tips
-1. You can directly use the code framework of [RCDNet](https://github.com/hongwang01/RCDNet) to execute the training and testing process.
-2. More simple training framework, pretrained models, and derained results will be released as soon as possible!
+You can directly use the code framework of [RCDNet](https://github.com/hongwang01/RCDNet) or the simple framework [RCDNet_simple](https://github.com/hongwang01/RCDNet_simple) to execute the training and testing process.
+
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
