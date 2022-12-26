@@ -1,6 +1,6 @@
 # RCDNet: An Interpretable Rain Convolutional Dictionary Network for Single Image Deraining
  
-[Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, Yong Liang, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng)
+[Hong Wang](https://hongwang01.github.io/), Qi Xie, Qian Zhao, Yuexiang Li, Yong Liang, Yefeng Zheng, and [Deyu Meng](http://gr.xjtu.edu.cn/web/dymeng)
 
  [[Google Drive]](https://drive.google.com/file/d/1aWpc0xsGXqjyOBqL5NHweP-i0EccDnoV/view?usp=sharing)[[Arxiv]](https://arxiv.org/abs/2107.06808) 
  
@@ -34,6 +34,19 @@ intrinsic priors of rain streaks and has clear interpretability. In specific, we
 
 ## Dataset & Training & Testing
 Please refer to the original coding framework [RCDNet](https://github.com/hongwang01/RCDNet) or the simple framework [RCDNet_simple](https://github.com/hongwang01/RCDNet_simple) to execute the training and testing process.
+
+
+
+## Citations
+
+```
+@article{ji2021survey,
+  title={RCDNet: An Interpretable Rain Convolutional Dictionary Network for Single Image Deraining},
+  author={Wang, Hong and Xie, Qi and Zhao, Qian and Li, Yuexiang and Yong, Liang and Zheng, Yefeng and Meng, Deyu},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2022}
+}
+```
 
 ## Contact
 If you have any question, please feel free to concat Hong Wang (Email: hongwang01@stu.xjtu.edu.cn)
