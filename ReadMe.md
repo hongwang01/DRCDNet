@@ -40,11 +40,11 @@ Please refer to the original coding framework [RCDNet](https://github.com/hongwa
 ## Citations
 
 ```
-@article{ji2021survey,
-  title={RCDNet: An Interpretable Rain Convolutional Dictionary Network for Single Image Deraining},
-  author={Wang, Hong and Xie, Qi and Zhao, Qian and Li, Yuexiang and Yong, Liang and Zheng, Yefeng and Meng, Deyu},
+@article{wang2023rcdnet,
+  title={RCDNet: An interpretable rain convolutional dictionary network for single image deraining},
+  author={Wang, Hong and Xie, Qi and Zhao, Qian and Li, Yuexiang and Liang, Yong and Zheng, Yefeng and Meng, Deyu},
   journal={IEEE Transactions on Neural Networks and Learning Systems},
-  year={2022}
+  year={2023}
 }
 ```
 
