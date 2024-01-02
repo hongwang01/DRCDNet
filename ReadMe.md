@@ -26,9 +26,7 @@ intrinsic priors of rain streaks and has clear interpretability. In specific, we
 
 ## Dataset
 
-1. Download Rain100L (training data: train/small/, testing data: test/small), Rain100H (training data: train/small/, testing data: test/small), Rain1400 (training data: train/small/, testing data: test/small), SPA-Data (testing data: test/small) from the  [[NetDisk]](https://pan.baidu.com/s/1yV4ih7C4Xg0iazqSBB-U1Q) (pwd:uz8h) and put them into the folder "data".
-
-2. Dense10, Sparse10, and Internet-Data can be collected from [], and [], respectively.
+Download Rain100L (training data: train/small/, testing data: test/small), Rain100H (training data: train/small/, testing data: test/small), Rain1400 (training data: train/small/, testing data: test/small), SPA-Data (testing data: test/small) from the  [[NetDisk]](https://pan.baidu.com/s/1yV4ih7C4Xg0iazqSBB-U1Q) (pwd:uz8h) and put them into the folder "data".
 
 
 ## Training
