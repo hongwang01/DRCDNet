@@ -28,6 +28,12 @@ intrinsic priors of rain streaks and has clear interpretability. In specific, we
 
 Download Rain100L (training data: train/small/, testing data: test/small), Rain100H (training data: train/small/, testing data: test/small), Rain1400 (training data: train/small/, testing data: test/small), SPA-Data (testing data: test/small) from the  [[NetDisk]](https://pan.baidu.com/s/1yV4ih7C4Xg0iazqSBB-U1Q) (pwd:uz8h) and put them into the folder "data".
 
+## Running Environment
+Python 3.6
+PyTorch 1.4.0
+numpy 1.18
+torchvision 0.5.0
+
 
 ## Training
 Taking the training on Rain100L as an example:
@@ -38,15 +44,15 @@ $ python train.py  --data_path data/Rain100L/train/small/rain/ --gt_path data/Ra
 
 ## Pretrained_Model
 
-1. Training on Rain100L Training Data: ``Pretrained_Model/Rain100L/model_100.pt''
+1. Training on Rain100L Training Data: ``pretrained_Model/Rain100L/model_100.pt''
 
-2. Training on Rain100H Training Data: ``Pretrained_Model/Rain100H/model_100.pt''
+2. Training on Rain100H Training Data: ``pretrained_Model/Rain100H/model_100.pt''
 
-3. Training on Rain1400 Training Data:  ``Pretrained_Model/Rain1400/model_100.pt''
+3. Training on Rain1400 Training Data:  ``pretrained_Model/Rain1400/model_100.pt''
 
-4. Training on Rain100L Training Data and Rain1400 Training Data:  ``Pretrained_Model/Rain100L+Rain1400/model_100.pt''
+4. Training on Rain100L Training Data and Rain1400 Training Data:  ``pretrained_Model/Rain100L+Rain1400/model_100.pt''
 
-5. Training on Rain100L Training Data and Rain100H Training Data:  ``Pretrained_Model/Rain100L+Rain100H/model_100.pt''
+5. Training on Rain100L Training Data and Rain100H Training Data:  ``pretrained_Model/Rain100L+Rain100H/model_100.pt''
 
 
 All these pretrained_models can be downloaded from [[Google Drive]](https://drive.google.com/drive/folders/1HAFLQfjj--sd-Cfo9HibsUCTjxU9AcMx?usp=drive_link)
