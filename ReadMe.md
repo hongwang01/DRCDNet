@@ -26,12 +26,15 @@ intrinsic priors of rain streaks and has clear interpretability. In specific, we
 
 ## Dataset
 
-Download Rain100L (training data: train/small/, testing data: test/small), Rain100H (training data: train/small/, testing data: test/small), Rain1400 (training data: train/small/, testing data: test/small), SPA-Data (testing data: test/small) from the  [[NetDisk]](https://pan.baidu.com/s/1yV4ih7C4Xg0iazqSBB-U1Q) (pwd:uz8h) and put them into the folder "data".
+Download Rain100L (training data: train/small/, testing data: test/small), Rain100H (training data: train/small/, testing data: test/small), Rain1400 (training data: train/small/, testing data: test/small), SPA-Data (testing data: test/small) from the  [[NetDisk]](https://pan.baidu.com/s/1yV4ih7C4Xg0iazqSBB-U1Q) (pwd:uz8h) and put them into the folder "DRCDNet/data".
 
 ## Running Environment
 Python 3.6
+
 PyTorch 1.4.0
+
 numpy 1.18
+
 torchvision 0.5.0
 
 
@@ -55,7 +58,7 @@ $ python train.py  --data_path data/Rain100L/train/small/rain/ --gt_path data/Ra
 5. Training on Rain100L Training Data and Rain100H Training Data:  ``pretrained_Model/Rain100L+Rain100H/model_100.pt''
 
 
-All these pretrained_models can be downloaded from [[Google Drive]](https://drive.google.com/drive/folders/1HAFLQfjj--sd-Cfo9HibsUCTjxU9AcMx?usp=drive_link)
+All these pretrained_models can be downloaded from [[Google Drive]](https://drive.google.com/drive/folders/1HAFLQfjj--sd-Cfo9HibsUCTjxU9AcMx?usp=drive_link)  and are put into the folder "DRCDNet/pretrained_model".
 
 
 
@@ -78,7 +81,7 @@ python test.py --data_path data/Rain100H/test/small/rain/ --model_dir pretrained
 python test.py --data_path data/Rain1400/test/small/rain/ --model_dir pretrained_model/Rain1400/ --save_path derained/match/Rain1400/  --gpu_id 0
 ```
 
-All the derained  results can be downloaded from [[NetDisk]](https://pan.baidu.com/s/18YlHicICTsdWye8pB_jVSw?pwd=drcd) (pwd:drcd)
+All the derained  results can be downloaded from [[NetDisk]](https://pan.baidu.com/s/18YlHicICTsdWye8pB_jVSw?pwd=drcd) (pwd:drcd).
 
 ## Training-Testing Mismatch Case:
 1. Rain100H --> Dense10
@@ -120,6 +123,10 @@ python test.py --data_path data/Internet-Data/test/small/rain/ --model_dir pretr
 All the derained  results can be downloaded from [[NetDisk]](https://pan.baidu.com/s/18YlHicICTsdWye8pB_jVSw?pwd=drcd) (pwd:drcd)
 
 
+## Performance Evaluation
+
+All PSNR and SSIM results are computed by using  this [Matlab code](https://github.com/hongwang01/RCDNet/tree/master/Performance_evaluation), based on Y channel of YCbCr space.
+
 ## Citations
 
 ```
@@ -128,6 +135,15 @@ All the derained  results can be downloaded from [[NetDisk]](https://pan.baidu.c
   author={Wang, Hong and Xie, Qi and Zhao, Qian and Li, Yuexiang and Liang, Yong and Zheng, Yefeng and Meng, Deyu},
   journal={IEEE Transactions on Neural Networks and Learning Systems},
   year={2023}
+}
+```
+```
+@InProceedings{Wang_2020_CVPR,  
+author = {Wang, Hong and Xie, Qi and Zhao, Qian and Meng, Deyu},  
+title = {A Model-Driven Deep Neural Network for Single Image Rain Removal},  
+booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},  
+month = {June},  
+year = {2020}  
 }
 ```
 
