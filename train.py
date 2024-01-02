@@ -21,7 +21,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tensorboardX import SummaryWriter
 from torch.optim.lr_scheduler import MultiStepLR
-from utils import findLastCheckpoint, batch_PSNR
 from network import DRCDNet
 from torch.utils.data import DataLoader
 from DerainDataset import TrainDataset
