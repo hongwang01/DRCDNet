@@ -48,6 +48,7 @@ class DRCDNet(nn.Module):
         self.proxNet_B_last_layer = Bnet(args)                                               # fine-tune at the last stage
         self.tau_const = torch.Tensor([1])
         self.tau = nn.Parameter(self.tau_const, requires_grad=True)                          # for sparse rain layer
+        self.tau_extend = nn.Parameter(self.tau_const, requires_grad=True)  # for sparse rain layer
         # Transform the rain map with channel N=32 initialized by RCDNet and take the partial channel with channel d=6 as the initialized rain map in DRCDNet
         convert = torch.eye(self.num_M, self.num_M)
         big_convert = convert.unsqueeze(dim=2).unsqueeze(dim=3)
@@ -181,7 +182,7 @@ class DRCDNet(nn.Module):
             Galpha = torch.bmm(CM_re_trans, R_hat_re).squeeze(dim=2)
             Galpha_re = Galpha.reshape(b, self.num_M, self.num_D)
             alpha = self.proxNet_alpha_S[i+1](alpha + self.eta3_S[i+1, :] / (h * w * 50) * Galpha_re)
-            ListAlpha.append(alpha)
+
 
             #M-net
             R_re =torch.bmm(alpha.reshape(b,1, self.num_M*self.num_D), CM_re).reshape(b, 3, h, w)
@@ -215,7 +216,7 @@ class Mnet(nn.Module):
         self.channels = args.num_M
         self.T = args.T                                           # the number of resblocks in each proxNet
         self.layer = self.make_resblock(self.T)
-        self.tau0 = torch.Tensor([args.Mtau])
+        self.tau0 = torch.Tensor([1.5])
         self.tau_const = self.tau0.unsqueeze(dim=0).unsqueeze(dim=0).unsqueeze(dim=0).expand(-1,self.channels,-1,-1)
         self.tau = nn.Parameter(self.tau_const, requires_grad=True)  # for sparse rain map
     def make_resblock(self, T):
